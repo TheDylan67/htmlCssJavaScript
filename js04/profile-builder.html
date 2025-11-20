@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Builder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+        
+        #profile {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        #profile h2 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+        
+        #profile p {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="profile">
+        <h2 id="name"></h2>
+        <p id="job"></p>
+        <p id="location"></p>
+        <p id="bio"></p>
+    </div>
+    
+    <script>
+        const personName = "Sarah Johnson";
+        const jobTitle = "Web Developer";
+        const personLocation = "San Francisco, CA";
+        const personBio = "Passionate about creating beautiful and functional websites. Love learning new technologies!";
+        
+        const nameElement = document.getElementById('name');
+        const jobElement = document.getElementById('job');
+        const locationElement = document.getElementById('location');
+        const bioElement = document.getElementById('bio');
+        const profileCard = document.getElementById('profile');
+        
+        // Completed: Populate the profile card
+        nameElement.textContent = personName;
+        jobElement.textContent = jobTitle;
+        locationElement.textContent = personLocation;
+        bioElement.textContent = personBio;
+        
+        // Completed: Bonus styles
+        nameElement.style.textAlign = 'center';
+        jobElement.style.fontStyle = 'italic';
+        profileCard.style.border = '2px solid #1976d2';
+        
+        console.log('Profile card created!');
+    </script>
+</body>
+</html>

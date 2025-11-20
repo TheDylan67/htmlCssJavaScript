@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Const vs Let</title>
+</head>
+<body>
+    <h1>Understanding Const and Let</h1>
+    <p>Check the console for the constant reassignment error!</p>
+    <div id="output"></div>
+    
+    <script>
+        // Use const for values that won't change
+        const birthYear = 2007;     // Your birth year never changes
+        const hometown = "Medina";  // Your birthplace doesn't change
+        const schoolName = "M.C.J.V.S."; // The school name is constant
+        
+        // Use let for values that will change
+        let currentYear = 2025;  // The year keeps changing
+        let age = 17;        // Your age changes every year
+        let grade = 11;      // Your grade changes
+        
+        // Try to change a const - this will cause an ERROR!
+        // birthYear = 2006;  // UNCOMMENT THIS LINE to see the console error.
+        
+        // Changing let variables is fine
+        age = age + 1; // Age will change next year
+        grade = 12;    // Grade changes next year
+        
+        // Display the information
+        let info = `
+            Birth Year: ${birthYear} (const - fixed)<br>
+            Hometown: ${hometown} (const - fixed)<br>
+            Current Age: ${age} (let - changed)<br>
+            Current Grade: ${grade} (let - changed)
+        `;
+        
+        document.getElementById('output').innerHTML = info;
+        
+        console.log("Birth Year (const):", birthYear);
+        console.log("Age (let, changed):", age);
+    </script>
+</body>
+</html>

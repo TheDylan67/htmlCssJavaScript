@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theme Switcher</title>
+    <style>
+        .light-theme {
+            background-color: white;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        
+        .dark-theme {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            transition: all 0.3s ease;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .theme-indicator {
+            text-align: center;
+            font-weight: bold;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            background-color: rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <div class="container">
+        <h1>Theme Switcher Demo</h1>
+        
+        <div class="theme-indicator" id="indicator">
+            Current Theme: Light
+        </div>
+        
+        <p>This page demonstrates theme switching using JavaScript and CSS classes.</p>
+        <p>Watch as the theme automatically changes from light to dark after 2 seconds!</p>
+        <p>The smooth transition effect is created using CSS transitions.</p>
+    </div>
+    
+    <script>
+        const body = document.body;
+        const indicator = document.getElementById('indicator');
+        
+        console.log('Starting with light theme');
+        
+        // Completed: Switch to Dark Theme after 2 seconds
+        setTimeout(() => {
+            body.classList.replace('light-theme', 'dark-theme');
+            indicator.textContent = 'Current Theme: Dark';
+            console.log('Switched to dark theme!');
+        }, 2000);
+        
+        // Completed: Bonus Switch back to light after 6 seconds
+        setTimeout(() => {
+            body.classList.replace('dark-theme', 'light-theme');
+            indicator.textContent = 'Current Theme: Light';
+            console.log('Switched back to light theme!');
+        }, 6000);
+    </script>
+</body>
+</html>

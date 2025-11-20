@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #8B0000; /* dark red */
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(139, 0, 0, 0.2); /* dark red shadow */
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #8B0000;
+    margin-bottom: 30px;
+    font-size: 42px;
+    text-shadow: 2px 2px 4px rgba(139, 0, 0, 0.2);
+}
+
+/* Team Stats Section */
+.team-stats {
+    background-color: #8B0000;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.2);
+}
+
+.team-stats h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.team-stats p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.team-stats span {
+    font-weight: bold;
+    font-size: 24px;
+    background-color: white;
+    color: #8B0000;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Member Cards */
+.member-card {
+    background-color: #B22222; /* firebrick */
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border-left: 8px solid white;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(139, 0, 0, 0.3);
+}
+
+.member-card h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 32px;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+}
+
+.member-card p {
+    margin: 12px 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.member-card strong {
+    color: white;
+    min-width: 200px;
+    display: inline-block;
+}
+
+.member-card span {
+    color: white;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .member-card strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

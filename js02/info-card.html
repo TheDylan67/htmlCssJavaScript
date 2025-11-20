@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info Card</title>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    
+    <p id="name"></p>
+    <p id="email"></p>
+    <p id="phone"></p>
+    <p id="location"></p>
+    <p id="hobby"></p>
+    
+    <script>
+        // Create your variables here
+        let fullName = "Dylan Preston Gilbert";
+        let emailAddress = "mc_dgilbert27@mcjvs2.org";
+        let phoneNumber = "555-555-5555";
+        let city = "Medina";
+        let favoriteHobby = "Lifting";
+        
+        // Use template literals to format and display
+        document.getElementById('name').textContent = `Name: ${fullName}`;
+        document.getElementById('email').textContent = `Email: ${emailAddress}`;
+        document.getElementById('phone').textContent = `Phone: ${phoneNumber}`;
+        document.getElementById('location').textContent = `Location: ${city}`;
+        document.getElementById('hobby').textContent = `Hobby: ${favoriteHobby}`;
+        
+    </script>
+</body>
+</html>

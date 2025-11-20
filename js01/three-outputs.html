@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dylan's Hobby Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            max-width: 700px;
+            line-height: 1.6;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <button onclick="console.log('You clicked the button!')">Click Me</button>
+
+    <script>
+        // Show an alert when the page loads
+        alert('Hey there! Welcome to my hobby page.');
+
+        // Log a message to the console
+        console.log('Learning JavaScript is fun!');
+
+        // Inject heading and paragraph into the page using innerHTML
+        document.getElementById('content').innerHTML = `
+            <h1>Favorite Hobby</h1>
+            <p>My favorite hobby of all time is lifting weights. It has been a passion of mine for many years, and I hope to turn it into a career one day. Having my hobby as a career would be a dream come true. Although it will be a long journey, it might be worth it in the end because I’ll get to learn more about something I truly love.</p>
+        `;
+    </script>
+</body>
+</html>

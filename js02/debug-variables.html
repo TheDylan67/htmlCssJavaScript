@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Practice</title>
+</head>
+<body>
+    <h1 id="output"></h1>
+    
+    <script>
+        // Fix the errors in this code!
+        
+        // 1. Variable naming error (spaces not allowed): "first name" -> "firstName"
+        let firstName = "Emma";
+        
+        // 2. String quote error (missing closing quote): "25; -> "25"
+        let age = "25";
+        
+        const favoriteColor = "blue";
+        
+        // 3. Variable naming error (can't start with number): "2ndPlace" -> "secondPlace"
+        let secondPlace = "silver";
+        
+        // 4. Const reassignment error: favoriteColor cannot be changed
+        // favoriteColor = "red"; // This line is commented out to prevent the error
+        
+        // 5. Undefined variable error: The template literal now correctly uses 'firstName'
+        let message = `${firstName} is ${age} years old`;
+        document.getElementById('output').textContent = message;
+        
+        console.log(message);
+    </script>
+</body>
+</html>
