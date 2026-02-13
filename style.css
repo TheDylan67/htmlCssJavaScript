@@ -1,0 +1,136 @@
+/* VARIABLES */
+:root {
+    --bg: #f4f1ea;
+    --text: #2c2c2c;
+    --header: #1b261d;
+    --accent: #5e2f1f;
+    --card: #ffffff;
+    --border: #bc9a7c;
+}
+
+body.dark-mode {
+    --bg: #121212;
+    --text: #e0d8c3;
+    --header: #0a0e0b;
+    --accent: #d2691e;
+    --card: #1e1e1e;
+    --border: #444;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+header {
+    background-color: var(--header);
+    color: #e0d8c3;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo { font-size: 2.5rem; letter-spacing: 5px; font-weight: bold; }
+
+nav { margin-top: 15px; }
+nav a {
+    color: #e0d8c3;
+    text-decoration: none;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+#dark-mode-toggle {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: "Times New Roman";
+}
+
+/* THE 3-COLUMN GRID SYSTEM */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* FORCES 3 COLUMNS ACROSS */
+    gap: 1in; /* REQUESTED 1 INCH SPACING */
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.grid-item {
+    text-align: center;
+    background: var(--card);
+    padding: 15px;
+    border: 1px solid var(--border);
+}
+
+.grid-item img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.grid-item h3 { margin: 15px 0 5px; font-size: 1.2rem; }
+.grid-item p { color: var(--accent); font-weight: bold; }
+
+/* TITLES & BLOCKS */
+.section-title {
+    text-align: center;
+    color: var(--accent);
+    font-size: 2.2rem;
+    margin-top: 60px;
+}
+
+.content-block {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.builder-box {
+    background: var(--header);
+    color: white;
+    padding: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    border: 2px dashed var(--accent);
+}
+
+footer {
+    background: #000;
+    color: #666;
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE TABLET/PHONE */
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* Keeps 3-col on iPad */
+        gap: 0.5in;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stacks only on small phones */
+    }
+}

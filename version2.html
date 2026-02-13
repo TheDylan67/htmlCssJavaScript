@@ -1,0 +1,130 @@
+/* GLOBAL STYLES */
+:root {
+    --bg-color: #f4f1ea;
+    --text-color: #2c2c2c;
+    --header-bg: #1b261d;
+    --accent-color: #5e2f1f;
+    --card-bg: #ffffff;
+}
+
+/* DARK MODE VARIABLES */
+body.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #e0d8c3;
+    --header-bg: #0d130e;
+    --accent-color: #d2691e;
+    --card-bg: #2a2a2a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: #e0d8c3;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+nav { margin-top: 15px; }
+nav a {
+    color: #e0d8c3;
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* SETTINGS BUTTON */
+#dark-mode-toggle {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-family: "Times New Roman";
+}
+
+/* 3-COLUMN GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* FORCES 3 COLUMNS */
+    gap: 1in; /* REQUESTED 1 INCH GAP */
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 180px; /* Fixed height for uniformity */
+    object-fit: cover;
+    border: 1px solid #bc9a7c;
+}
+
+.grid-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.grid-item p {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin: 40px 0 20px;
+}
+
+.build-steps {
+    background: var(--accent-color);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #000;
+    color: #666;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    .grid-container { grid-template-columns: 1fr; gap: 20px; }
+}
