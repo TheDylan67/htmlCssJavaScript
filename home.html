@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Player & Team Analytics</title>
+    <style>
+        /* Modern "Dark Mode" styling to make sports data pop */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #0f172a; /* Deep dark blue background */
+            color: #f8fafc; /* Crisp white text */
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #38bdf8; /* Vibrant light blue for the title */
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #94a3b8; /* Soft grey for the text */
+            margin-top: 15px;
+        }
+
+        /* Dashboard Container */
+        .dashboard-area {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #1e293b; /* Slightly lighter blue-grey */
+            border: 2px solid #334155;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #334155;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        /* Ensuring the embed fits nicely */
+        .tableauPlaceholder {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NBA Intelligence Dashboard</h1>
+        
+        <p class="description">
+            This dashboard provides a comprehensive look at NBA player performance and team efficiency metrics. 
+            By utilizing a detailed professional basketball dataset, these visualizations help identify 
+            scoring trends and defensive impacts across the league. It is designed to turn complex 
+            box score data into actionable insights for fans and analysts alike.
+        </p>
+    </header>
+
+    <div class="dashboard-area">
+        <div class='tableauPlaceholder' id='viz1710000000000' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='NBA Dashboard' src='https://public.tableau.com/static/images/nb/nba_17725462051550/Dashboard1/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='nba_17725462051550/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1710000000000');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height='827px';} 
+            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='827px';} 
+            else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+
+    <footer>
+        Developed by: [Insert Your Name Here]
+    </footer>
+
+</body>
+</html>
